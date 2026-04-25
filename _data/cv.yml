@@ -152,8 +152,6 @@ cv:
       - label: Coding Languages
         details: "Strong experience in Python (PyTorch, Pandas, scikit-learn, ...). Worked on Matlab and knowledge in C/C++ (mostly for Arduino)."
         name: Coding Languages
-        keywords:
-          - "Strong experience in Python (PyTorch, Pandas, scikit-learn, ...). Worked on Matlab and knowledge in C/C++ (mostly for Arduino)."
 
     Languages:
       - label: French
