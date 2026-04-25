@@ -22,7 +22,7 @@ cv:
 
       - institution: Delft University of Technology (TU Delft)
         location: Netherlands
-        area: Exchange
+        area: Exchange - Mechanical/Aerospace Engineering
         start_date: 2023
         end_date: 2024
         highlights: []
@@ -129,7 +129,7 @@ cv:
         title: Deep Learning Object Detection Competition
         date: 2025
         awarder: Image Analysis and Pattern Recognition course
-        summary: "Winner of the Deep Learning Object Detection competition 2025 in the Image Analysis and Pattern Recognition course."
+        summary: "Winner of the Deep Learning Object Detection competition 2025"
 
       - name: EPFL Space Race
         title: EPFL Space Race
