@@ -13,7 +13,7 @@ cv:
 
   sections:
     Education:
-      - institution: École Polytechnique Fédérale de Lausanne (EPFL)
+      - institution: EPFL
         location: Switzerland
         area: Robotics - Data Science minor
         degree: Master
@@ -29,7 +29,7 @@ cv:
         end_date: 2024
         highlights: []
 
-      - institution: École Polytechnique Fédérale de Lausanne (EPFL)
+      - institution: EPFL
         location: Switzerland
         area: Mechanical Engineering
         degree: Bachelor
