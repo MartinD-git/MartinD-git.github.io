@@ -5,11 +5,10 @@ cv:
   phone: "+33 6 80 60 18 35"
   location: Lausanne, Switzerland
 
-  social_networks:
-    - network: LinkedIn
-      username: martin-daigne-04ba40250
-
   custom_connections:
+    - placeholder: LinkedIn
+      url: https://www.linkedin.com/in/martin-daigne/
+      fontawesome_icon: linkedin
     - placeholder: GitHub
       url: https://github.com/MartinD-git
       fontawesome_icon: github

@@ -15,9 +15,8 @@ layout: default
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">
-      {{ page.title }}
-      {% if page.cv_pdf %}
+    {% if page.cv_pdf %}
+      <div class="text-right mb-2">
         <a
           {% if page.cv_pdf contains '://' %}
             href="{{ page.cv_pdf }}"
@@ -26,12 +25,15 @@ layout: default
           {% endif %}
           target="_blank"
           rel="noopener noreferrer"
-          class="btn btn-lg z-depth-0 float-right"
+          class="btn btn-lg z-depth-0"
           role="button"
         >
-          <i class="fa-solid fa-file-pdf"></i> PDF
+          <i class="fa-solid fa-file-pdf"></i> Download PDF
         </a>
-      {% endif %}
+      </div>
+    {% endif %}
+    <h1 class="post-title">
+      {{ page.title }}
     </h1>
     {% if page.description %}
       <p class="post-description">{{ page.description }}</p>
