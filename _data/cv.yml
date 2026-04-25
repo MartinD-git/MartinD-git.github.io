@@ -8,8 +8,11 @@ cv:
   social_networks:
     - network: LinkedIn
       username: martin-daigne-04ba40250
-    - network: GitHub
-      username: MartinD-git
+
+  custom_connections:
+    - placeholder: GitHub
+      url: https://github.com/MartinD-git
+      fontawesome_icon: github
 
   sections:
     Education:
