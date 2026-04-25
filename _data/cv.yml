@@ -1,189 +1,172 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
-  image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  name: Martin Daigne
+  headline: Robotics Master's Student — Data Science Minor
+  email: martin.daigne@epfl.ch
+  phone: "+33 6 80 60 18 35"
+  location: Lausanne, Switzerland
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
     - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: martin-daigne-04ba40250
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: École Polytechnique Fédérale de Lausanne (EPFL)
+        location: Switzerland
+        area: Robotics - Data Science minor
+        degree: Master
+        start_date: 2024
+        end_date: 2027
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Core courses: Machine Learning, Deep Learning, Reinforcement Learning, Convex Optimization, Model Predictive Control, Learning and Adaptive Control for Robots, Mobile Robotics, Robotics for Manipulation, Applied Data Analysis, Modern Natural Language Processing..."
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: Delft University of Technology (TU Delft)
+        location: Netherlands
+        area: Exchange
+        start_date: 2023
+        end_date: 2024
+        highlights: []
+
+      - institution: École Polytechnique Fédérale de Lausanne (EPFL)
+        location: Switzerland
+        area: Mechanical Engineering
+        degree: Bachelor
+        start_date: 2021
+        end_date: 2024
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Grade: 5.57/6"
+          - "Core courses: Analysis, General Physics (Mechanics, Thermodynamics, Electromagnetics), Numerical Analysis, Dynamical Systems, Continuum Mechanics, Structural Mechanics, Nonlinear Mechanics, Fluid Mechanics, Experimental Fluids, Heat and Mass Transfer, Control Systems, MEMS, Intelligent Vehicles..."
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: EPFL, Laboratory of Intelligent Systems (LIS)
+        position: Semester Project
+        location: Switzerland
+        url: https://www.epfl.ch/labs/lis/
+        start_date: 2026-02
+        end_date: 2026-06
+        summary: ""
         highlights:
-          - Relativity
-          - Description 2.
+          - "Design and implementation of diffusion policies (DDPM, DDIM, score matching, flow matching) to generate control trajectories for a morphing drone controlled with an MPPI."
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: EPFL, Computational Robot Design and Fabrication Lab (CREATE)
+        position: Semester Project
+        location: Switzerland
+        url: https://www.epfl.ch/labs/create/
+        start_date: 2025-09
+        end_date: 2026-01
+        summary: ""
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Data-Enabled Model Predictive Control for Compliant Manipulators: I built a simulation in Python and an adaptive MPC controller for a soft, tendon-driven arm using CasADi and acados for real-time deployment."
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: EPFL, Unsteady Flow Diagnostics Laboratory (UNFoLD)
+        position: Summer in the Lab Internship
+        location: Switzerland
+        url: https://www.epfl.ch/labs/unfold/
+        start_date: 2024-06
+        end_date: 2024-08
+        summary: ""
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - "Design, building, and analysis of a random gust generator to improve realism in wind turbine experiments."
+
+      - company: Geneva University (UNIGE), Athena Program
+        position: Student Researcher
+        location: Switzerland
+        url: https://www.unige.ch/sciences/fr/faculteetcite/programme-athena/
+        start_date: 2020-09
+        end_date: 2021-06
+        summary: ""
+        highlights:
+          - "1st semester: Set Theory and Logic in Mathematics alongside high school."
+          - "2nd semester: Research on Kuratowski's Theorem in Set Theory."
+
+      - company: IPGP Paris Physics Institute
+        position: Intern
+        location: France
+        start_date: 2018-11
+        end_date: 2018-11
+        summary: ""
+        highlights:
+          - "Analysis of seismic waves of the Mars InSight seismometer SEIS. Mission overview and attendance at coordination meetings."
+
+      - company: Aether Swiss Kite
+        position: Control Team Leader
+        location: Switzerland
+        start_date: 2025
+        end_date: 2026
+        summary: ""
+        highlights:
+          - "Lead the data acquisition, system identification, and control of the kite to achieve optimized automated control."
+
+      - company: Aether Swiss Kite
+        position: Electrical and Control Engineer
+        location: Switzerland
+        start_date: 2024
+        end_date: 2025
+        summary: ""
+        highlights:
+          - "1st semester: Design, building, and integration of a position sensor of the kite."
+          - "2nd semester: Data acquisition and filter implementation (EKF, UKF) to localize the kite."
+
+      - company: EPFL Rocket Team
+        position: Recovery System Engineer
+        location: Switzerland
+        start_date: 2022
+        end_date: 2023
+        summary: ""
+        highlights:
+          - "Design and testing of the parachute of the Nordend rocket of the EPFL Rocket Team for the European EUROC competition."
+
+      - company: EPFL
+        position: Teaching Assistant
+        location: Switzerland
+        date: "2022–2023 / 2024–2025"
+        summary: ""
+        highlights:
+          - "Teaching assistant in Introduction to Computer Science, Analysis II, Fluid Mechanics, and Model Predictive Control."
 
     Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - name: Deep Learning Object Detection Competition
+        title: Deep Learning Object Detection Competition
+        date: 2025
+        awarder: Image Analysis and Pattern Recognition course
+        summary: "Winner of the Deep Learning Object Detection competition 2025 in the Image Analysis and Pattern Recognition course."
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
-
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: EPFL Space Race
+        title: EPFL Space Race
+        date: 2022
+        awarder: EPFL
+        summary: "Winner EPFL Space Race 2022."
 
     Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
+      - name: Cambridge English Advanced Certificate
+        date: 2020
+        issuer: Cambridge
+        summary: "English, C1 level."
 
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
+      - name: Dutch NT2
+        date: 2020
+        issuer: ""
+        summary: "Dutch."
 
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+    Skills:
+      - label: Coding Languages
+        details: "Strong experience in Python (PyTorch, Pandas, scikit-learn, ...). Worked on Matlab and knowledge in C/C++ (mostly for Arduino)."
+        name: Coding Languages
+        keywords:
+          - "Strong experience in Python (PyTorch, Pandas, scikit-learn, ...). Worked on Matlab and knowledge in C/C++ (mostly for Arduino)."
 
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+    Languages:
+      - label: French
+        details: Mother tongue
+        name: French
+        summary: Mother tongue
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - label: English
+        details: C1
+        name: English
+        summary: C1
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - label: Dutch
+        details: Intermediate
+        name: Dutch
+        summary: Intermediate
