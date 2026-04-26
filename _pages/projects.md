@@ -5,7 +5,7 @@ permalink: /projects/
 description: Some of my projects are 
 nav: true
 nav_order: 2
-display_categories: [Robotics Master]
+display_categories: [Robotics Master, Others]
 horizontal: false
 ---
 
