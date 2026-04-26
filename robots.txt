@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://martind-git.github.io//sitemap.xml
+Sitemap: https://martin.daigne.com/sitemap.xml
