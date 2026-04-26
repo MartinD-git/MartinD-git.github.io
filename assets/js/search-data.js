@@ -64,7 +64,7 @@ ninja.data = [{
           title: 'Other pojects',
           description: "Coming soon...",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/Thymio%20copy/";
+              window.location.href = "/projects/Others/";
             },},{id: "projects-mobile-robotics",
           title: 'Mobile Robotics',
           description: "Small course project covering image detection, path planing, state estimation and obstacle avoidance",
