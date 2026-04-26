@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Other pojects
-description: Coming soon...
+description: 
 importance: 4
 category: Others
 ---
