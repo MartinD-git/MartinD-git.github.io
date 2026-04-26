@@ -13,7 +13,7 @@ github: https://github.com/MartinD-git/MPC_adaptative_soft_arm
     <a class="btn btn-sm btn-outline-primary" href="https://github.com/MartinD-git/MPC_adaptative_soft_arm" target="_blank" rel="noopener noreferrer">GitHub</a>
 </p>
 
-A research project about online data-driven adaptive MPC. 
+A research project about online data-driven adaptive MPC done at the [CREATE](https://www.epfl.ch/labs/create/) lab.
 
 The goal was to control with an MPC a tendon-driven soft arm. <img src="assets/img/projects/sp1/soft arm.png" alt="drawing" width="200"/>
 

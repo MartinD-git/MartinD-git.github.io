@@ -139,6 +139,23 @@ ul.task-list input[type="checkbox"] {
     img {
       width: 100%;
     }
+
+    .card-img-top {
+      width: calc(100% - 1rem);
+      margin: 0.5rem;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      display: block;
+      border-radius: 0.5rem;
+    }
+
+    .card-img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      display: block;
+      padding-top: 0;
+    }
   }
 
   .col {

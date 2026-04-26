@@ -5,5 +5,5 @@ description: How Would a Wikispeedia Player Navigate the 2025 Version of Wikiped
 img: assets/img/projects/ada/wikipediacropped.png
 importance: 3
 category: Robotics Master
-url: https://memagnin.github.io/epfl-ada.github.io/
+redirect: https://memagnin.github.io/epfl-ada.github.io/
 ---
