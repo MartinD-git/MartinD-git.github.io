@@ -62,7 +62,7 @@ ninja.data = [{
               window.location.href = "/projects/IAPR/";
             },},{id: "projects-other-pojects",
           title: 'Other pojects',
-          description: "Coming soon...",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Others/";
             },},{id: "projects-mobile-robotics",
