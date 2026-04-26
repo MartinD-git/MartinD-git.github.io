@@ -2,16 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle:  
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: prof_pic.png
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Lausanne , Switzerland</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,6 +25,13 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+Hi! Welcome to my website. This is a place where I try to centralize my projects and CV. 
+
+I am a French student coming from a BSc. in Mechanical Engineering at EPFL and curruntly pursuing a MSc. in Robotics strongly oriented towards machine learning and control. My interests lay in exploring how to use the recent (massive) advancements in AI to improve robots.
+
+In the future if I have some time I may add a blog on what I have learned if I judge there is need and its not just one more of those medium blogs :). In the meantime here are some really cool blogs I can only recommend: [Lil'Log](https://lilianweng.github.io/) and [Karpathy's](https://karpathy.github.io/)
+
+Don't hesitate to look at my GitHub profile for the code of some of the projects.
 
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
