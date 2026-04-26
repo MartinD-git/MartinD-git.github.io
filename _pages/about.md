@@ -25,11 +25,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! Welcome to my website. This is a place where I try to centralize my projects and CV. 
+Hi! Welcome to my website. This is a place where I centralize my projects and resume. 
 
-I am a French student coming from a BSc. in Mechanical Engineering at EPFL and curruntly pursuing a MSc. in Robotics strongly oriented towards machine learning and control. My interests lay in exploring how to use the recent (massive) advancements in AI to improve robots.
+I am a French student coming from a BSc. in Mechanical Engineering at EPFL and currently pursuing a MSc. in Robotics strongly oriented towards machine learning and control. My interests lay in exploring how to use the recent (massive) advancements in AI to improve robots.
 
-In the future if I have some time I may add a blog on what I have learned if I judge there is need and its not just one more of those medium blogs :). In the meantime here are some really cool blogs I can only recommend: [Lil'Log](https://lilianweng.github.io/) and [Karpathy's](https://karpathy.github.io/)
+Here are some really cool blogs I can only recommend: [Lil'Log](https://lilianweng.github.io/) and [Karpathy's](https://karpathy.github.io/)
 
 Don't hesitate to look at my GitHub profile for the code of some of the projects.
 
