@@ -111,7 +111,7 @@ ninja.data = [{
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/martin-daigne", "_blank");
+          window.open("https://www.linkedin.com/in/martin-daigne-04ba40250", "_blank");
         },
       },{
       id: 'light-theme',
