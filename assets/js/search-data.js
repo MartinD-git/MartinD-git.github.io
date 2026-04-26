@@ -50,14 +50,29 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "projects-wikispeedia-analysis",
+          title: 'Wikispeedia Analysis',
+          description: "How Would a Wikispeedia Player Navigate the 2025 Version of Wikipedia? CS-401 Project",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ADA/";
             },},{id: "projects-chocolate-detection-competition",
           title: 'Chocolate Detection Competition',
           description: "Deep Learning contest from EE-461 EPFL",
           section: "Projects",handler: () => {
               window.location.href = "/projects/IAPR/";
-            },},{id: "projects-adaptative-mpc",
-          title: 'Adaptative MPC',
-          description: "Research semester project",
+            },},{id: "projects-other-pojects",
+          title: 'Other pojects',
+          description: "Coming soon...",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Thymio%20copy/";
+            },},{id: "projects-mobile-robotics",
+          title: 'Mobile Robotics',
+          description: "Small course project covering image detection, path planing, state estimation and obstacle avoidance",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Thymio/";
+            },},{id: "projects-research-semester-project",
+          title: 'Research semester project',
+          description: "Online Adaptive MPC on Tendon-Driven Soft Arm",
           section: "Projects",handler: () => {
               window.location.href = "/projects/semester_proj1/";
             },},{id: "teachings-data-science-fundamentals",
@@ -75,42 +90,28 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/example_pdf.pdf", "_blank");
+          window.open("/assets/rendercv/rendercv_output/Martin_Daigne_CV.pdf", "_blank");
         },
       },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%6D%61%72%74%69%6E.%64%61%69%67%6E%65@%65%70%66%6C.%63%68", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://github.com/MartinD-git", "_blank");
         },
       },{
-        id: 'social-rss',
-        title: 'RSS Feed',
+        id: 'social-linkedin',
+        title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("/feed.xml", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
+          window.open("https://www.linkedin.com/in/martin-daigne", "_blank");
         },
       },{
       id: 'light-theme',
