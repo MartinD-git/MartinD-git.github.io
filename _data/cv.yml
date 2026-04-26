@@ -7,7 +7,7 @@ cv:
 
   custom_connections:
     - placeholder: LinkedIn
-      url: https://www.linkedin.com/in/martin-daigne/
+      url: https://www.linkedin.com/in/martin-daigne-04ba40250/
       fontawesome_icon: linkedin
     - placeholder: GitHub
       url: https://github.com/MartinD-git
