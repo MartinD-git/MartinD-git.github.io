@@ -16,21 +16,18 @@ layout: default
 <div class="post">
   <header class="post-header">
     {% if page.cv_pdf %}
-      <div class="text-right mb-2">
-        <a
-          {% if page.cv_pdf contains '://' %}
-            href="{{ page.cv_pdf }}"
-          {% else %}
-            href="{{ page.cv_pdf | relative_url }}"
-          {% endif %}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-lg z-depth-0"
-          role="button"
-        >
-          <i class="fa-solid fa-file-pdf"></i> Download PDF
-        </a>
-      </div>
+      <a
+        {% if page.cv_pdf contains '://' %}
+          href="{{ page.cv_pdf }}"
+        {% else %}
+          href="{{ page.cv_pdf | relative_url }}"
+        {% endif %}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="float-right"
+      >
+        <i class="fa-solid fa-file-pdf"></i>
+      </a>
     {% endif %}
     <h1 class="post-title">
       {{ page.title }}
