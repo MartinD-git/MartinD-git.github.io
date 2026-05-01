@@ -43,6 +43,7 @@ cv:
 
       - institution: Lycee St-Francois
         location: France
+        area: High School
         degree: French Baccalauréat
         end_date: 2021
         highlights:
