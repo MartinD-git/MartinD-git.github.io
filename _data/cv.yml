@@ -2,7 +2,7 @@ cv:
   name: Martin Daigne
   headline: Robotics Master's Student — Data Science Minor
   email: martin.daigne@epfl.ch
-  phone: "+33 6 80 60 18 35"
+  phone: "+33680601835"
   location: Lausanne, Switzerland
 
   custom_connections:
@@ -40,6 +40,14 @@ cv:
         highlights:
           - "Grade: 5.57/6"
           - "Core courses: Analysis, General Physics (Mechanics, Thermodynamics, Electromagnetics), Numerical Analysis, Dynamical Systems, Continuum Mechanics, Structural Mechanics, Nonlinear Mechanics, Fluid Mechanics, Experimental Fluids, Heat and Mass Transfer, Control Systems, MEMS, Intelligent Vehicles..."
+
+      - institution: Lycee St-Francois
+        location: France
+        degree: French Baccalauréat
+        end_date: 2021
+        highlights:
+          - Awarded with highest distinction "Félicitations du jury"
+          - Mathematics, Physics specialties
 
     Experience:
       - company: EPFL, Laboratory of Intelligent Systems (LIS)
@@ -147,10 +155,10 @@ cv:
         issuer: Cambridge
         summary: "English, C1 level."
 
-      - name: Dutch NT2
-        date: 2020
+      - name: Goeth Institut
+        date: 2018
         issuer: ""
-        summary: "Dutch."
+        summary: "German B1."
 
     Skills:
       - label: Coding Languages
@@ -169,6 +177,11 @@ cv:
         summary: C1
 
       - label: Dutch
-        details: Intermediate
+        details: Fluen
         name: Dutch
-        summary: Intermediate
+        summary: Fluent
+
+      - label: German
+        details: Scholar
+        name: German
+        summary: Scholar
