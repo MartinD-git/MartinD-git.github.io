@@ -81,6 +81,9 @@ jobs:
         with:
           python-version: "3.13"
           cache: "pip" # caching pip dependencies
+      - name: Install Python dependencies 📦
+        run: |
+          pip3 install -r requirements.txt
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
@@ -88,6 +91,21 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+      - name: Render CV PDF 📄
+        run: |
+          cv_file=$(find _data -maxdepth 1 -type f \( -name "cv.yaml" -o -name "cv.yml" \))
+          rendercv_dir=$(find assets -maxdepth 1 -type d -name "rendercv")
+          if [ -z "$cv_file" ] || [ -z "$rendercv_dir" ]; then
+            echo "CV or RenderCV directory not found. Skipping PDF rendering."
+            exit 0
+          fi
+          settings=$(find "$rendercv_dir" -maxdepth 1 -type f \( -name "settings.yaml" -o -name "settings.yml" \))
+          if [ -z "$settings" ]; then
+            echo "RenderCV settings file not found. Skipping PDF rendering."
+            exit 0
+          fi
+          rendercv render "$cv_file" --settings "$settings"
+          rm -f assets/rendercv/rendercv_output/*.typ
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick

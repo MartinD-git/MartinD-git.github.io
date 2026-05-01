@@ -50,7 +50,7 @@ cv:
         end_date: 2026-06
         summary: ""
         highlights:
-          - "Design and implementation of diffusion policies (DDPM, DDIM, score matching, flow matching) to generate control trajectories for a morphing drone controlled with an MPPI."
+          - "Design and implementation of diffusion policies (DDPM, DDIM, Score Matching, Flow Matching) to generate control trajectories for a morphing drone controlled with an MPPI."
 
       - company: EPFL, Computational Robot Design and Fabrication Lab (CREATE)
         position: Semester Project
