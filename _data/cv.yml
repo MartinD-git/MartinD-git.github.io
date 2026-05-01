@@ -41,15 +41,6 @@ cv:
           - "Grade: 5.57/6"
           - "Core courses: Analysis, General Physics (Mechanics, Thermodynamics, Electromagnetics), Numerical Analysis, Dynamical Systems, Continuum Mechanics, Structural Mechanics, Nonlinear Mechanics, Fluid Mechanics, Experimental Fluids, Heat and Mass Transfer, Control Systems, MEMS, Intelligent Vehicles..."
 
-      - institution: Lycee St-Francois
-        location: France
-        area: High School
-        degree: French Baccalauréat
-        end_date: 2021
-        highlights:
-          - Awarded with highest distinction "Félicitations du jury"
-          - Specialized in Mathematics and Physics
-
     Experience:
       - company: EPFL, Laboratory of Intelligent Systems (LIS)
         position: Semester Project
