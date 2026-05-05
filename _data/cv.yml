@@ -13,6 +13,10 @@ cv:
       url: https://github.com/MartinD-git
       fontawesome_icon: github
 
+    - placeholder: Website
+      url: martin.daigne.com
+      fontawesome_icon: globe
+
   sections:
     Education:
       - institution: École Polytechnique Fédérale de Lausanne (EPFL)
