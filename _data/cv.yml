@@ -12,7 +12,6 @@ cv:
     - placeholder: GitHub
       url: https://github.com/MartinD-git
       fontawesome_icon: github
-
     - placeholder: Website
       url: https://martin.daigne.com
       fontawesome_icon: globe
