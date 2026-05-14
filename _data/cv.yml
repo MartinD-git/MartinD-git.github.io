@@ -53,7 +53,7 @@ cv:
         end_date: 2026-06
         summary: ""
         highlights:
-          - "Design and implementation of diffusion policies (DDPM, DDIM, Score Matching, Flow Matching) to generate control trajectories for a morphing drone controlled with an MPPI."
+          - "Design and implementation of diffusion policies (DDPM, DDIM, Score Matching, Flow Matching) to generate control trajectories for a morphing drone previously controlled with an MPPI."
 
       - company: EPFL, Computational Robot Design and Fabrication Lab (CREATE)
         position: Semester Project
@@ -86,14 +86,14 @@ cv:
           - "1st semester: Set Theory and Logic in Mathematics alongside high school."
           - "2nd semester: Research on Kuratowski's Theorem in Set Theory."
 
-      - company: IPGP Paris Physics Institute
-        position: Intern
-        location: France
-        start_date: 2018-11
-        end_date: 2018-11
-        summary: ""
-        highlights:
-          - "Analysis of seismic waves of the Mars InSight seismometer SEIS. Mission overview and attendance at coordination meetings."
+      # - company: IPGP Paris Physics Institute
+      #   position: Intern
+      #   location: France
+      #   start_date: 2018-11
+      #   end_date: 2018-11
+      #   summary: ""
+      #   highlights:
+      #     - "Analysis of seismic waves of the Mars InSight seismometer SEIS. Mission overview and attendance at coordination meetings."
 
       - company: Aether Swiss Kite
         position: Control Team Leader
@@ -172,7 +172,7 @@ cv:
         summary: C1
 
       - label: Dutch
-        details: Fluen
+        details: Fluent
         name: Dutch
         summary: Fluent
 
