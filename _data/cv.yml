@@ -25,7 +25,7 @@ cv:
         start_date: 2024
         end_date: 2027
         highlights:
-          - "Core courses: Machine Learning, Deep Learning, Reinforcement Learning, Convex Optimization, Model Predictive Control, Learning and Adaptive Control for Robots, Mobile Robotics, Robotics for Manipulation, Applied Data Analysis, Modern Natural Language Processing..."
+          - "Core courses: Machine Learning, Deep Learning, Reinforcement Learning, Convex Optimization, Model Predictive Control, Mobile Robotics, Applied Data Analysis, Modern Natural Language Processing..."
 
       - institution: Delft University of Technology (TU Delft)
         location: Netherlands
@@ -42,7 +42,7 @@ cv:
         end_date: 2024
         highlights:
           - "Grade: 5.57/6"
-          - "Core courses: Analysis, General Physics (Mechanics, Thermodynamics, Electromagnetics), Numerical Analysis, Dynamical Systems, Continuum Mechanics, Structural Mechanics, Nonlinear Mechanics, Fluid Mechanics, Experimental Fluids, Heat and Mass Transfer, Control Systems, MEMS, Intelligent Vehicles..."
+          - "Core courses: Analysis, General Physics (Mechanics, Thermodynamics, Electromagnetics), Numerical Analysis, Dynamical Systems, Structural Mechanics, Nonlinear Mechanics, Fluid Mechanics, Control Systems, MEMS, Autonomous Vehicles..."
 
     Experience:
       - company: EPFL, Laboratory of Intelligent Systems (LIS)
@@ -75,16 +75,16 @@ cv:
         highlights:
           - "Design, building, and analysis of a random gust generator to improve realism in wind turbine experiments."
 
-      - company: Geneva University (UNIGE), Athena Program
-        position: Student Researcher
-        location: Switzerland
-        url: https://www.unige.ch/sciences/fr/faculteetcite/programme-athena/
-        start_date: 2020-09
-        end_date: 2021-06
-        summary: ""
-        highlights:
-          - "1st semester: Set Theory and Logic in Mathematics alongside high school."
-          - "2nd semester: Research on Kuratowski's Theorem in Set Theory."
+      # - company: Geneva University (UNIGE), Athena Program
+      #   position: Student Researcher
+      #   location: Switzerland
+      #   url: https://www.unige.ch/sciences/fr/faculteetcite/programme-athena/
+      #   start_date: 2020-09
+      #   end_date: 2021-06
+      #   summary: ""
+      #   highlights:
+      #     - "1st semester: Set Theory and Logic in Mathematics alongside high school."
+      #     - "2nd semester: Research on Kuratowski's Theorem in Set Theory."
 
       # - company: IPGP Paris Physics Institute
       #   position: Intern
