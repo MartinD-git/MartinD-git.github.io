@@ -144,17 +144,6 @@ cv:
         awarder: EPFL
         summary: "Winner EPFL Space Race 2022."
 
-    Certificates:
-      - name: Cambridge English Advanced Certificate
-        date: 2020
-        issuer: Cambridge
-        summary: "English, C1 level."
-
-      - name: Goeth Institut
-        date: 2018
-        issuer: ""
-        summary: "German B1"
-
     Skills:
       - label: Coding Languages
         details: "Strong experience in Python (PyTorch, Pandas, scikit-learn, ...). Worked on Matlab and knowledge in C/C++ (mostly for Arduino)."
@@ -167,9 +156,9 @@ cv:
         summary: Mother tongue
 
       - label: English
-        details: C1
+        details: C1 (Cambridge English Advanced Certificate, 2020)
         name: English
-        summary: C1
+        summary: C1 (Cambridge English Advanced Certificate, 2020)
 
       - label: Dutch
         details: Fluent
@@ -177,6 +166,6 @@ cv:
         summary: Fluent
 
       - label: German
-        details: Scholar
+        details: Scholar (Goeth Institut, B1, 2018)
         name: German
-        summary: Scholar
+        summary: Scholar (Goeth Institut, B1, 2018)
