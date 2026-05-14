@@ -153,7 +153,7 @@ cv:
       - name: Goeth Institut
         date: 2018
         issuer: ""
-        summary: "German B1."
+        summary: "German B1"
 
     Skills:
       - label: Coding Languages
