@@ -1,0 +1,105 @@
+---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import { categories } from "../data/site";
+import ProjectDetails from "./ProjectDetails.astro";
+import Icon from "./Icon.astro";
+
+const projects = (await getCollection("projects", ({ data }) => !data.draft)).sort(
+  (a, b) => a.data.order - b.data.order || a.data.title.localeCompare(b.data.title)
+);
+---
+
+<section id="projects" class="projects-section" aria-labelledby="projects-heading" data-section>
+  <div class="section-heading">
+    <div>
+      <h2 id="projects-heading">
+        Selected projects<span class="accent">.</span>
+      </h2>
+    </div>
+    <span class="project-total" aria-hidden="true">
+      {String(projects.length).padStart(2, "0")} projects
+    </span>
+  </div>
+
+  <div class="project-filters" role="group" aria-label="Filter projects by category">
+    <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true" aria-controls="project-grid">
+      All
+    </button>
+    {categories.map((category) => (
+      <button type="button" class="filter-button" data-filter={category.id} aria-pressed="false" aria-controls="project-grid">
+        {category.label}
+      </button>
+    ))}
+  </div>
+  <p id="filter-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true">
+    Showing all {projects.length} projects
+  </p>
+
+  <div id="project-grid" class="project-grid">
+    {projects.map((project) => (
+      <button
+        type="button"
+        class="project-card"
+        data-project={project.id}
+        data-categories={JSON.stringify(project.data.categories)}
+        aria-label={`View ${project.data.title}, ${project.data.year}`}
+        aria-haspopup="dialog"
+        aria-controls="project-dialog"
+      >
+        <span
+          class:list={["project-visual", { "contain-image": project.data.thumbnail?.fit === "contain", "missing-image": !project.data.thumbnail }]}
+        >
+          {project.data.thumbnail ? (
+            <Image
+              src={project.data.thumbnail.src}
+              alt={project.data.thumbnail.alt}
+              widths={[320, 640, 960]}
+              sizes="(max-width: 540px) 90vw, (max-width: 1100px) 44vw, 30vw"
+              loading="lazy"
+            />
+          ) : (
+            <span class="image-placeholder">
+              <span class="placeholder-title">{project.data.title}</span>
+              <span class="placeholder-note">Project image to add</span>
+            </span>
+          )}
+          {project.data.preview && (
+            <video class="project-preview" muted loop playsinline preload="none" aria-hidden="true" tabindex={-1} data-src={project.data.preview} />
+          )}
+        </span>
+        <span class="project-caption">
+          <span class="card-caption-text">
+            <span class="project-name">{project.data.title}</span>
+            <span class="project-year">{project.data.year}</span>
+          </span>
+          <Icon name="arrow" size={22} />
+        </span>
+      </button>
+    ))}
+  </div>
+  <p class="no-projects" hidden>
+    No projects in this category yet.
+  </p>
+  <noscript>
+    <p class="noscript-note">
+      Enable JavaScript to filter projects and open their details. Reports and code remain available in the{" "}
+      <a href="https://github.com/MartinD-git">GitHub profile</a>.
+    </p>
+  </noscript>
+  {projects.map((project) => (
+    <ProjectDetails project={project} />
+  ))}
+</section>
+
+<dialog id="project-dialog" class="project-dialog" aria-labelledby="project-title">
+  <div class="dialog-scroll">
+    <div class="dialog-toolbar">
+      <button class="dialog-close" type="button" autofocus>
+        <span>Back to projects</span>
+        <Icon name="close" />
+      </button>
+    </div>
+    <div id="project-dialog-content"></div>
+  </div>
+</dialog>

@@ -2,122 +2,62 @@ name: Deploy site
 
 on:
   push:
-    branches:
-      - master
-      - main
-    paths:
-      - "assets/**"
-      - "_sass/**"
-      - "_scripts/**"
-      - "**.bib"
-      - "**.html"
-      - "**.js"
-      - "**.liquid"
-      - "**/*.md"
-      - "**.yml"
-      - "Gemfile"
-      - "Gemfile.lock"
-      - "!.github/workflows/axe.yml"
-      - "!.github/workflows/broken-links.yml"
-      - "!.github/workflows/deploy-docker-tag.yml"
-      - "!.github/workflows/deploy-image.yml"
-      - "!.github/workflows/docker-slim.yml"
-      - "!.github/workflows/lighthouse-badger.yml"
-      - "!.github/workflows/prettier.yml"
-      - "!lighthouse_results/**"
-      - "!CONTRIBUTING.md"
-      - "!CUSTOMIZE.md"
-      - "!FAQ.md"
-      - "!INSTALL.md"
-      - "!README.md"
+    branches: [main, redesign]
   pull_request:
-    branches:
-      - master
-      - main
-    paths:
-      - "assets/**"
-      - "_sass/**"
-      - "_scripts/**"
-      - "**.bib"
-      - "**.html"
-      - "**.js"
-      - "**.liquid"
-      - "**/*.md"
-      - "**.yml"
-      - "Gemfile"
-      - "Gemfile.lock"
-      - "!.github/workflows/axe.yml"
-      - "!.github/workflows/broken-links.yml"
-      - "!.github/workflows/deploy-docker-tag.yml"
-      - "!.github/workflows/deploy-image.yml"
-      - "!.github/workflows/docker-slim.yml"
-      - "!.github/workflows/lighthouse-badger.yml"
-      - "!.github/workflows/prettier.yml"
-      - "!lighthouse_results/**"
-      - "!CONTRIBUTING.md"
-      - "!CUSTOMIZE.md"
-      - "!FAQ.md"
-      - "!INSTALL.md"
-      - "!README.md"
+    branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+
+env:
+  ASTRO_TELEMETRY_DISABLED: 1
 
 jobs:
-  deploy:
-    # available images: https://github.com/actions/runner-images#available-images
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v4
-      - name: Setup Ruby 💎
-        uses: ruby/setup-ruby@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          ruby-version: "3.3.5"
-          bundler-cache: true
-      - name: Setup Python 🐍
-        uses: actions/setup-python@v5
+          node-version: "22.23.4"
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - uses: actions/setup-python@v5
         with:
-          python-version: "3.13"
-          cache: "pip" # caching pip dependencies
-      - name: Install Python dependencies 📦
-        run: |
-          pip3 install -r requirements.txt
-      - name: Update _config.yml ⚙️
-        uses: fjogeleit/yaml-update-action@main
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-cv.txt
+      - run: pip install -r requirements-cv.txt
+      - name: Generate the latest CV
+        run: rendercv render _data/cv.yml --settings assets/rendercv/settings.yaml --design assets/rendercv/design.yaml --locale-catalog assets/rendercv/locale.yaml
+      - run: npm run build
+      - run: npm test
+      - uses: actions/upload-artifact@v4
         with:
-          commitChange: false
-          valueFile: "_config.yml"
-          propertyPath: "giscus.repo"
-          value: ${{ github.repository }}
-      - name: Render CV PDF 📄
-        run: |
-          cv_file=$(find _data -maxdepth 1 -type f \( -name "cv.yaml" -o -name "cv.yml" \))
-          rendercv_dir=$(find assets -maxdepth 1 -type d -name "rendercv")
-          if [ -z "$cv_file" ] || [ -z "$rendercv_dir" ]; then
-            echo "CV or RenderCV directory not found. Skipping PDF rendering."
-            exit 0
-          fi
-          settings=$(find "$rendercv_dir" -maxdepth 1 -type f \( -name "settings.yaml" -o -name "settings.yml" \))
-          if [ -z "$settings" ]; then
-            echo "RenderCV settings file not found. Skipping PDF rendering."
-            exit 0
-          fi
-          rendercv render "$cv_file" --settings "$settings"
-          rm -f assets/rendercv/rendercv_output/*.typ
-      - name: Install and Build 🔧
-        run: |
-          sudo apt-get update && sudo apt-get install -y imagemagick
-          pip3 install --upgrade nbconvert
-          export JEKYLL_ENV=production
-          bundle exec jekyll build
-      - name: Purge unused CSS 🧹
-        run: |
-          npm install -g purgecss
-          purgecss -c purgecss.config.js
-      - name: Deploy 🚀
-        if: github.event_name != 'pull_request'
+          name: portfolio-preview
+          path: dist
+          include-hidden-files: true
+
+  deploy:
+    # Branch builds and pull requests can never write to production.
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: github-pages-production
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: portfolio-preview
+          path: dist
+      - name: Publish to the existing GitHub Pages branch
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: _site
+          branch: gh-pages
+          folder: dist

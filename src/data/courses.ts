@@ -1,0 +1,81 @@
+// Grouped by subject, using Martin's supplied course list.
+export const courses = [
+  {
+    title: "Mathematics",
+    items: [
+      "Analysis I, II, III & IV",
+      "Linear Algebra",
+      "Numerical Analysis",
+      "Probability and Statistics",
+      "Dynamical Systems",
+      "Convex Optimization",
+      "Mathematics of Data: From Theory to Computation",
+    ],
+  },
+  {
+    title: "Machine Learning & AI",
+    items: [
+      "Introduction to Machine Learning",
+      "Machine Learning I",
+      "Machine Learning for Transport and Multi-Machine Systems",
+      "Reinforcement Learning",
+      "Applied Data Analysis",
+      "Deep Learning",
+      "Image Analysis and Pattern Recognition",
+      "Modern Natural Language Processing",
+    ],
+  },
+  {
+    title: "Robotics & Control",
+    items: [
+      "Control System Design",
+      "Intelligent Vehicles",
+      "Basics of Mobile Robotics",
+      "Basics of Robotics for Manipulation",
+      "Model Predictive Control",
+      "Robotics Practicals",
+      "Learning and Adaptive Control for Robots",
+      "System Identification",
+    ],
+  },
+  {
+    title: "Mechanics, Design & Materials",
+    items: [
+      "Mechanical Construction I & II",
+      "Introduction to Structural Mechanics",
+      "Mechanics of Structures",
+      "Continuum Mechanics",
+      "Mechanical Behaviour of Materials",
+      "Materials: From Chemistry to Properties",
+      "Mechanical Systems",
+      "Engineering Dynamics",
+      "Structural Analysis and Design",
+      "Nonlinear Mechanics",
+      "Experimental Dynamics",
+    ],
+  },
+  {
+    title: "Fluids & Energy",
+    items: [
+      "Thermodynamics and Energetics I",
+      "Fluid Mechanics",
+      "Drive and Energy Systems",
+      "Advanced Fluid Dynamics",
+      "Introduction to Wind Turbines: Physics and Technology",
+      "Advanced Heat Transfer",
+      "Experimental Techniques in Fluid Mechanics",
+    ],
+  },
+  {
+    title: "Other Engineering Topics",
+    items: [
+      "General Physics: Mechanics, Thermodynamics, Electromagnetism",
+      "Information, Computation, Communication",
+      "Industrial Production Processes",
+      "Programming for Engineers",
+      "Electrical Engineering Science & Technology",
+      "Micro- and Nanosystems Design and Fabrication (including MEMS Lab)",
+      "Applied Experimental Methods: Medical Instrumentation",
+    ],
+  },
+];

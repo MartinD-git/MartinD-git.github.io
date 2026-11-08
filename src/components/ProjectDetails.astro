@@ -1,0 +1,71 @@
+---
+import { render, type CollectionEntry } from "astro:content";
+import Icon from "./Icon.astro";
+import ProjectMedia from "./ProjectMedia.astro";
+import { categories } from "../data/site";
+
+interface Props {
+  project: CollectionEntry<"projects">;
+}
+const { project } = Astro.props;
+const { data } = project;
+const { Content } = await render(project);
+---
+
+<template id={`detail-${project.id}`}>
+  <article class="project-detail">
+    <header class="detail-heading">
+      <p class="detail-meta">
+        {data.year}
+        <span aria-hidden="true"> / </span>
+        {data.categories.map((id) => categories.find((category) => category.id === id)?.label).join(" · ")}
+      </p>
+      <h2 id="project-title">{data.title}</h2>
+      <p class="project-overview">{data.overview}</p>
+      {(data.github || data.report || data.links.length > 0) && (
+        <div class="project-links">
+          {data.github && (
+            <a href={data.github} target="_blank" rel="noreferrer">
+              GitHub
+              <Icon name="arrow" size={15} />
+              <span class="sr-only"> (opens in a new tab)</span>
+            </a>
+          )}
+          {data.report && (
+            <a href={data.report} target="_blank" rel="noreferrer">
+              Project report <span class="link-format">PDF</span>
+              <Icon name="arrow" size={15} />
+              <span class="sr-only"> (opens in a new tab)</span>
+            </a>
+          )}
+          {data.links.map((link) => (
+            <a href={link.url} target="_blank" rel="noreferrer">
+              {link.label}
+              <Icon name="arrow" size={15} />
+              <span class="sr-only"> (opens in a new tab)</span>
+            </a>
+          ))}
+        </div>
+      )}
+    </header>
+
+    <div class:list={["detail-layout", { "without-media": !data.media.length }]}>
+      {data.media[0] && (
+        <div class="detail-hero">
+          <ProjectMedia media={data.media[0]} />
+        </div>
+      )}
+      <div class="project-prose">
+        <Content />
+      </div>
+    </div>
+
+    {data.media.length > 1 && (
+      <div class="detail-gallery">
+        {data.media.slice(1).map((media) => (
+          <ProjectMedia media={media} />
+        ))}
+      </div>
+    )}
+  </article>
+</template>
