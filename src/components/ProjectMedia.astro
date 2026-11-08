@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  media: CollectionEntry<"projects">["data"]["media"][number];
+}
+const { media } = Astro.props;
+---
+
+<figure class:list={["detail-media", { "portrait-media": media.type === "image" && media.src.height > media.src.width * 1.5 }]}>
+  {media.type === "image" ? (
+    <Image src={media.src} alt={media.alt} widths={[480, 960, 1440]} sizes="(max-width: 760px) 90vw, 900px" loading="lazy" />
+  ) : (
+    <video controls playsinline preload="none" poster={media.poster?.src} aria-label={media.alt}>
+      <source src={media.src} />
+      Your browser does not support embedded video. <a href={media.src}>Download the video</a>.
+    </video>
+  )}
+  {media.caption && <figcaption>{media.caption}</figcaption>}
+</figure>

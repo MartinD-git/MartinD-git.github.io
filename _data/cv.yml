@@ -46,6 +46,16 @@ cv:
           - "Core courses: Analysis, General Physics (Mechanics, Thermodynamics, Electromagnetics), Numerical Analysis, Dynamical Systems, Structural Mechanics, Nonlinear Mechanics, Fluid Mechanics, Control Systems, MEMS, Autonomous Vehicles..."
 
     Experience:
+      - company: Zeiss Medical Technology
+        position: Research Intern
+        location: Munich, Germany
+        url: https://www.zeiss.com/meditec/en/home.html
+        start_date: 2026-09
+        end_date: 2027-02
+        summary: ""
+        highlights:
+          - "Developping new and innovative applications of AI in Ophthalmology."
+
       - company: EPFL, Laboratory of Intelligent Systems (LIS)
         position: Semester Project
         location: Switzerland
@@ -143,7 +153,7 @@ cv:
         title: EPFL Space Race
         date: 2022
         awarder: EPFL
-        summary: "Winner EPFL Space Race 2022."
+        summary: "Winner EPFL Space Race 2022. [[link]](https://epflrocketteam.ch/projects/space-race/)"
 
     Skills:
       - label: Coding Languages

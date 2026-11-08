@@ -1,0 +1,2 @@
+# Verified with the published classic appearance and existing YAML source.
+rendercv[full]==2.8
